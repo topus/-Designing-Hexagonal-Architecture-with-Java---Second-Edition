@@ -12,6 +12,7 @@
         <maven.compiler.plugin.version>3.14.0</maven.compiler.plugin.version>
         <maven.compiler.release>24</maven.compiler.release>
         <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
+        <maven.exec.plugin.version>3.2.0</maven.exec.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -35,6 +36,15 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${maven.exec.plugin.version}</version>
+                <configuration>
+                    <mainClass>dev.davivieira.App</mainClass>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
