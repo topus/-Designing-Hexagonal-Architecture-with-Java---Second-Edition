@@ -10,7 +10,7 @@ import dev.davivieira.domain.vo.Network;
 public class NetworkOperation {
 
     public static Router createNewNetwork(Router router, Network network) {
-        var availabilitySpec = new NetworkAvailabilitySpecification(network.address(), network.name(), network.cidr());
+        var availabilitySpec = new NetworkAvailabilitySpecification(network);
         var cidrSpec = new CIDRSpecification();
         var routerTypeSpec = new RouterTypeSpecification();
         var amountSpec = new NetworkAmountSpecification();

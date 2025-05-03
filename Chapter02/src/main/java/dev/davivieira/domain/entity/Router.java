@@ -33,7 +33,7 @@ public class Router {
     }
 
     public void addNetworkToSwitch(Network network){
-        this.networkSwitch = networkSwitch.addNetwork(network, this);
+        this.networkSwitch = networkSwitch.addNetwork(network);
     }
 
     public Network createNetwork(IP address, String name, int cidr){
